@@ -7,6 +7,7 @@ public class Digits
 
 	public Digits(int num)
 	{
+		digitList = new ArrayList <Integer>();
 		digitList.add(num % 10);
 		while(num > 0) {
 			digitList.set(0, num % 10);
