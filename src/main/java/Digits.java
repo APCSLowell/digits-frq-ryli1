@@ -9,6 +9,7 @@ public class Digits
 	{
 		digitList = new ArrayList <Integer>();
 		digitList.add(num % 10);
+		num = num / 10;
 		while(num > 0) {
 			digitList.set(0, num % 10);
 			num = num / 10;
