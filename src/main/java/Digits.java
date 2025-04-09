@@ -8,11 +8,12 @@ public class Digits
 	public Digits(int num)
 	{
 		digitList = new ArrayList <Integer>();
-		digitList.add(num % 10);
-		num = num / 10;
-		while(num > 0) {
-			digitList.set(0, num % 10);
-			num = num / 10;
+		int n = num;
+		digitList.add(n % 10);
+		n = n / 10;
+		while(n > 0) {
+			digitList.set(0, n % 10);
+			n = n / 10;
 		}
 	}
 
