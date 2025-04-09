@@ -20,7 +20,7 @@ public class Digits
 
 	public boolean isStrictlyIncreasing()
 	{ /* to be implemented in part (b) */
-		for(int i = 1; i < digitList.size(); i++) {
+		for(int i = 1; i <= digitList.size(); i++) {
 			if(digitList.get(i) < digitList.get(i-1)) {
 				return false;
 			}
